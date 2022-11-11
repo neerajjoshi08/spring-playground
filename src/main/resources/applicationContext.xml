@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="Food" class="com.example.entity.Food"/>
+
+    <bean id="Dog" class="com.example.entity.Dog">
+        <property name="name" value="ABC"/>
+        <property name="food" ref="Food"/>
+    </bean>
+    <bean id="Cat" class="com.example.entity.Cat">
+        <constructor-arg ref="Food"/>
+    </bean>
+
+</beans>
