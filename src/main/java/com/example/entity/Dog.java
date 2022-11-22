@@ -7,9 +7,11 @@ public class Dog implements Animal {
     public Dog() {
 
     }
+
     public Dog(Food food) {
         food = this.food;
     }
+
     @Override
     public void walk() {
         System.out.println("Dog is walking...");
@@ -32,5 +34,13 @@ public class Dog implements Animal {
     public void setFood(Food food) {
         System.out.println("Calling setter :: setFood");
         this.food = food;
+    }
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "name='" + name + '\'' +
+                ", food=" + food +
+                '}';
     }
 }

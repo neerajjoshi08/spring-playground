@@ -19,11 +19,13 @@ public class SpringTest {
         dog1.getFood();
 
         Animal dog2 = applicationContext.getBean("Dog", Animal.class);
-        if(dog == dog2) {
+        if (dog == dog2) {
             System.out.println("They are same object.");
         } else {
             System.out.println("They are different objects.");
         }
+
+        System.out.println(dog);
     }
 }
 /*
