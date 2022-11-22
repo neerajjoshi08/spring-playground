@@ -8,15 +8,6 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-
-    <bean id="Food" class="com.example.entity.Food"/>
-    <context:property-placeholder location="classpath:dog.properties"/>
-    <bean id="Dog" class="com.example.entity.Dog" scope="prototype" init-method="init" destroy-method="destroy">
-        <property name="name" value="${dog.name}"/>
-        <property name="food" ref="Food"/>
-    </bean>
-    <bean id="Cat" class="com.example.entity.Cat">
-        <constructor-arg ref="Food"/>
-    </bean>
+    <context:component-scan base-package="com.example"/>
 
 </beans>
