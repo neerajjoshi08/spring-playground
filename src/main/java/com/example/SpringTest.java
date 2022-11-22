@@ -21,15 +21,20 @@ public class SpringTest {
         Animal dog2 = applicationContext.getBean("Dog", Animal.class);
         if(dog == dog2) {
             System.out.println("They are same object.");
+        } else {
+            System.out.println("They are different objects.");
         }
     }
 }
 /*
 OUTPUT:
-Calling setter :: setName
 Calling setter :: setFood
 Dog is walking...
 Cat is walking...
+Calling setter :: setName
+Calling setter :: setFood
 Dog is eating food...
-They are same object.
+Calling setter :: setName
+Calling setter :: setFood
+They are different objects.
  */

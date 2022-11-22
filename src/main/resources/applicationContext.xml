@@ -7,7 +7,7 @@
 
     <bean id="Food" class="com.example.entity.Food"/>
 
-    <bean id="Dog" class="com.example.entity.Dog">
+    <bean id="Dog" class="com.example.entity.Dog" scope="prototype">
         <property name="name" value="ABC"/>
         <property name="food" ref="Food"/>
     </bean>
