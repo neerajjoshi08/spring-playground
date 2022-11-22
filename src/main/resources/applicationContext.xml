@@ -11,7 +11,7 @@
 
     <bean id="Food" class="com.example.entity.Food"/>
     <context:property-placeholder location="classpath:dog.properties"/>
-    <bean id="Dog" class="com.example.entity.Dog" scope="prototype">
+    <bean id="Dog" class="com.example.entity.Dog" scope="prototype" init-method="init" destroy-method="destroy">
         <property name="name" value="${dog.name}"/>
         <property name="food" ref="Food"/>
     </bean>
