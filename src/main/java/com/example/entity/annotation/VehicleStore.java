@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class VehicleStore {
-    @Value("Test-store")
+    @Value("${store.name}")
     private String name;
     @Autowired
     @Qualifier("BMW")

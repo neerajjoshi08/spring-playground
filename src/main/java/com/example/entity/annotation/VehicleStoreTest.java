@@ -17,5 +17,5 @@ public class VehicleStoreTest {
 /*
 OUTPUT:
 BMW is accelerating...
-VehicleStore{name='Test-store', vehicle=com.example.entity.annotation.BMW@77c2494c}
+VehicleStore{name='vehicle-store-1', vehicle=com.example.entity.annotation.BMW@57250572}
  */
