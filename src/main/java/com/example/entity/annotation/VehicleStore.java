@@ -8,8 +8,8 @@ public class VehicleStore {
     private Vehicle vehicle;
 
     @Autowired
-    public VehicleStore(Vehicle vehicle) {
-        System.out.println("Constructor called and " + vehicle + " injecte");
+    public void setVehicle(Vehicle vehicle) {
+        System.out.println("Setter called and " + vehicle + " injected.");
         this.vehicle = vehicle;
     }
 
