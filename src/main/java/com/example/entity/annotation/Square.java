@@ -2,7 +2,7 @@ package com.example.entity.annotation;
 
 import org.springframework.stereotype.Component;
 
-@Component("my-square")
+@Component
 public class Square implements Shape {
 
     @Override
