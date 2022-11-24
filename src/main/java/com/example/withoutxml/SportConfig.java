@@ -8,4 +8,8 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan("com.example.withoutxml")
 public class SportConfig {
 
+    @Bean
+    public Coach cricketCoach() {
+        return new CricketCoach();
+    }
 }

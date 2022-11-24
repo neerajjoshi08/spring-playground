@@ -9,6 +9,9 @@ public class SportTest {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(SportConfig.class);
         Sport sport = applicationContext.getBean(Cricket.class);
         sport.play();
+
+        Coach coach = applicationContext.getBean(CricketCoach.class);
+        coach.coaching();
     }
 }
 /*
