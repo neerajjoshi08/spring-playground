@@ -8,4 +8,12 @@ public class Audi implements Vehicle {
     public void accelerate() {
         System.out.println("Audi accelerating...");
     }
+//    @PostConstructor
+    public void init() {
+        System.out.println("init() method called...");
+    }
+//    @PreDestroy
+    public void destroy() {
+        System.out.println("destroy() method called...");
+    }
 }
