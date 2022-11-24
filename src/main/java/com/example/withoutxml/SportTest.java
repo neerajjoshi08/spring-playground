@@ -12,6 +12,10 @@ public class SportTest {
 
         Coach coach = applicationContext.getBean(CricketCoach.class);
         coach.coaching();
+
+        if(coach instanceof CricketCoach) {
+            System.out.println(((CricketCoach) coach).getName());
+        }
     }
 }
 /*
