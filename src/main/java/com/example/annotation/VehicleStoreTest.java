@@ -1,4 +1,4 @@
-package com.example.entity.annotation;
+package com.example.annotation;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

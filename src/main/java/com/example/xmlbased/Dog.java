@@ -1,4 +1,4 @@
-package com.example.entity;
+package com.example.xmlbased;
 
 public class Dog implements Animal {
     private String name;

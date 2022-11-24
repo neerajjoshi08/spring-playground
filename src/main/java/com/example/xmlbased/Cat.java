@@ -1,4 +1,4 @@
-package com.example.entity;
+package com.example.xmlbased;
 
 public class Cat implements Animal {
     private Food food;

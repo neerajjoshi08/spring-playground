@@ -1,8 +1,5 @@
-package com.example;
+package com.example.annotation;
 
-import com.example.entity.annotation.Rectangle;
-import com.example.entity.annotation.Shape;
-import com.example.entity.annotation.Square;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

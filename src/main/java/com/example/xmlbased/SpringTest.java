@@ -1,7 +1,5 @@
-package com.example;
+package com.example.xmlbased;
 
-import com.example.entity.Animal;
-import com.example.entity.Dog;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -40,5 +38,5 @@ Dog is eating food...
 Calling setter :: setName
 Calling setter :: setFood
 They are different objects.
-Dog{name='testdog', food=com.example.entity.Food@35ef1869}
+Dog{name='testdog', food=com.example.entity.xmlbased.Food@35ef1869}
  */

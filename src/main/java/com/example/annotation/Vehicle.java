@@ -1,4 +1,4 @@
-package com.example.entity.annotation;
+package com.example.annotation;
 
 public interface Vehicle {
     void accelerate();
